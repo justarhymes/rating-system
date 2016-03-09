@@ -1,0 +1,99 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h2#title {
+  margin: 0;
+  padding: 0 2rem;
+  background: #888;
+  height: 6vh;
+  line-height: 6vh;
+  color: #eee;
+}
+
+.button {
+  background: aqua;
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.list, .main {
+  float: left;
+}
+
+.list {
+  height: 88vh;
+  width: 25vw;
+  background: #f7f7f7;
+  border-right: 1px solid #888;
+}
+
+.main {
+  height: 88vh;
+  width: 75vw;
+  background: #eee;
+  color: #333;
+  padding: 1.5rem;
+}
+
+.main h2 {
+  margin: 0 0 0.5rem;
+}
+
+.meta {
+  height: 6vh;
+  background: #666;
+  color: #fff;
+  line-height: 6vh;
+  padding: 0 2rem;
+}
+
+.meta a {
+  color: #eee;
+}
+
+.panel {
+  border-bottom: 1px solid #888;
+  padding: 0.2rem 0.5rem;
+  overflow: hidden;
+}
+.panel .ratings {
+  float: left;
+  overflow: hidden;
+}
+.panel .title {
+  float: left;
+  padding: 0.3rem 0.5rem;
+}
+.panel .ratings .vote,
+.panel .ratings span {
+  display: block;
+  float: left;
+}
+.panel .ratings .vote .button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+.panel .ratings .vote .button:last-child {
+  margin-bottom: 0;
+}
+
+.panel .ratings span {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  min-width: 35px;
+  text-align: right;
+}
