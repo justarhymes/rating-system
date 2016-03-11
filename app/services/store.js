@@ -39,5 +39,17 @@ export default Ember.Service.extend({
   },
   findItems() {
     return items;
+  },
+  makeItem(item) {
+    let new_date = new Date();
+    item.set('id', (items.length + 1).toString());
+    item.set('date', (new_date).toString());
+    item.set('up', 1);
+    item.set('votes', 1);
+    items.pushObject(item);
+    return item;
+  },
+  newItem() {
+    return Item.create();
   }
 });

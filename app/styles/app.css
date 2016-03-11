@@ -7,13 +7,40 @@ body {
   margin: 0;
 }
 
-h2#title {
+header {
   margin: 0;
   padding: 0 2rem;
   background: #888;
   height: 6vh;
+  overflow: hidden;
+}
+
+header h2 {
+  float: left;
+  margin: 0;
   line-height: 6vh;
   color: #eee;
+}
+
+header .button,
+header .button:focus {
+  height: 4vh;
+  line-height: 4vh;
+  font-size: 0.9rem;
+  padding: 0 2rem;
+  color: white;
+  border: 0;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  background: black;
+  float: right;
+  margin-top: 1vh;
+  cursor: pointer;
+  outline: 0;
+}
+header .button:hover {
+  color: #ddd;
+  background: #333;
 }
 
 .button {

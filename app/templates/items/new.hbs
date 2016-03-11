@@ -1,0 +1,15 @@
+<form class="form" {{action "makeItem" model on="submit"}}>
+  <legend>New Item</legend>
+  <fieldset>
+    <label>Title</label>
+    {{input value=model.title type="text"}}
+  </fieldset>
+
+  <fieldset>
+    <label>Title</label>
+    {{textarea value=model.description}}
+  </fieldset>
+
+  <button class="button">Submit!</button>
+</form>
+{{outlet}}
