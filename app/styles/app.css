@@ -12,6 +12,7 @@ header {
   padding: 0 2rem;
   background: #888;
   height: 6vh;
+  min-height: 40px;
   overflow: hidden;
 }
 
@@ -62,6 +63,7 @@ header .button:hover {
 
 .list {
   height: 88vh;
+  min-height: 400px;
   width: 25vw;
   background: #f7f7f7;
   border-right: 1px solid #888;
@@ -69,6 +71,7 @@ header .button:hover {
 
 .main {
   height: 88vh;
+  min-height: 400px;
   width: 75vw;
   background: #eee;
   color: #333;
@@ -81,6 +84,7 @@ header .button:hover {
 
 .meta {
   height: 6vh;
+  min-height: 40px;
   background: #666;
   color: #fff;
   line-height: 6vh;
@@ -123,4 +127,45 @@ header .button:hover {
   padding: 0.2rem;
   min-width: 35px;
   text-align: right;
+}
+
+.form {
+  background: #aaa;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.form legend {
+  text-transform: uppercase;
+  padding: 1rem 1rem 0;
+}
+
+.form input, .form textarea {
+  background: #ddd;
+  border: 0;
+  display: block;
+  width: 100%;
+  color: #aaa;
+  padding: 0.25rem;
+  outline: 0;
+}
+
+.form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.form fieldset {
+  border: 0;
+  padding: 0.5rem 1rem 0;
+}
+
+.form .btn-wrap {
+  overflow: hidden;
+  padding: 0.5rem 1rem 0 0;
+}
+
+.form .btn-wrap .button {
+  float: right;
+  background: #000;
 }
