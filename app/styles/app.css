@@ -141,13 +141,15 @@ header .button:hover {
 }
 
 .form input, .form textarea {
-  background: #ddd;
+  background: #eee;
   border: 0;
   display: block;
   width: 100%;
   color: #aaa;
   padding: 0.25rem;
   outline: 0;
+  font-size: 1rem;
+  box-shadow: 0;
 }
 
 .form textarea {
